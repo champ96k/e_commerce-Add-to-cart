@@ -1,0 +1,208 @@
+{
+    "shareLink": "https://github.com/champ96k",
+    "name": "Amerika Foods",
+    "dscription": "American, Fast Food, Burgers",
+    "review": 4.3,
+    "totalReview": "1.2k+",
+    "deliveryTime": 15,
+    "category": [
+        {
+            "categoryName": "Recommended",
+            "item": [
+                {
+                    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "title": "Chicken Crunch Burger",
+                    "description": "It is a long established fact that a reader will be distracted.",
+                    "amount": 209
+                },
+                {
+                    "image": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "title": "Mighty Chicken Patty Burger",
+                    "description": "It is a long established fact that a reader will be distracted.",
+                    "amount": 107
+                },
+                {
+                    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "title": "Donut Header Chicken",
+                    "description": "It is a long established fact that a reader will be distracted.",
+                    "amount": 155
+                },
+                {
+                    "image": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9",
+                    "title": "Donut Chicken",
+                    "description": "It is a long established fact that a reader will be distracted.",
+                    "amount": 432
+                },
+                {
+                    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "title": "Chicken Crunch Burger",
+                    "description": "It is a long established fact that a reader will be distracted.",
+                    "amount": 329
+                },
+                {
+                    "image": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "title": "Mighty Chicken Patty Burger",
+                    "description": "It is a long established fact that a reader will be distracted.",
+                    "amount": 89
+                },
+                {
+                    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "title": "Donut Header Chicken",
+                    "description": "It is a long established fact that a reader will be distracted.",
+                    "amount": 22
+                },
+                {
+                    "image": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9",
+                    "title": "Donut Chicken",
+                    "description": "It is a long established fact that a reader will be distracted.",
+                    "amount": 99
+                }
+            ]
+        },
+        {
+            "categoryName": "Combos",
+            "item": [
+                {
+                    "image": "https://images.unsplash.com/photo-1492683962492-deef0ec456c0?q=80&w=2912&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "title": "Chicken Wings",
+                    "description": "Chicken Livers Topped with PERi-PERi Sauce, Served with A Roll To Soak Up The Sauce.",
+                    "amount": 122
+                },
+                {
+                    "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "title": "Mighty Chicken Patty Burger",
+                    "description": "It is a long established fact that a reader will be distracted.",
+                    "amount": 302
+                },
+                {
+                    "image": "https://images.unsplash.com/photo-1513442542250-854d436a73f2?q=80&w=2747&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "title": "Chicken Livers and Portuguese Roll",
+                    "description": "It is a long established fact that a reader will be distracted.",
+                    "amount": 384
+                },
+                {
+                    "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=2946&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "title": "Spicy Mixed Olives",
+                    "description": "It is a long established fact that a reader will be distracted.",
+                    "amount": 102
+                }
+            ]
+        },
+        {
+            "categoryName": "Desserts",
+            "item": [
+                {
+                    "image": "https://images.unsplash.com/photo-1587314168485-3236d6710814?q=80&w=2878&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "title": "The Cheese Cake Factory",
+                    "description": "Chicken Livers Topped with PERi-PERi Sauce, Served with A Roll To Soak Up The Sauce.",
+                    "amount": 129
+                },
+                {
+                    "image": "https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "title": "California Pizza Kitchen",
+                    "description": "It is a long established fact that a reader will be distracted.",
+                    "amount": 72
+                },
+                {
+                    "image": "https://images.unsplash.com/photo-1579372786545-d24232daf58c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "title": "Chicken Livers and Portuguese Roll",
+                    "description": "It is a long established fact that a reader will be distracted.",
+                    "amount": 640
+                },
+                {
+                    "image": "https://images.unsplash.com/photo-1469533778471-92a68acc3633?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "title": "Spicy Mixed Olives",
+                    "description": "It is a long established fact that a reader will be distracted.",
+                    "amount": 99
+                }
+            ]
+        },
+        {
+            "categoryName": "Sandwiches",
+            "item": [
+                {
+                    "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "title": "Chicken Crunch Burger",
+                    "description": "It is a long established fact that a reader will be distracted.",
+                    "amount": 209
+                },
+                {
+                    "image": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "title": "Mighty Chicken Patty Burger",
+                    "description": "It is a long established fact that a reader will be distracted.",
+                    "amount": 107
+                },
+                {
+                    "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "title": "Donut Header Chicken",
+                    "description": "It is a long established fact that a reader will be distracted.",
+                    "amount": 155
+                },
+                {
+                    "image": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9",
+                    "title": "Donut Chicken",
+                    "description": "It is a long established fact that a reader will be distracted.",
+                    "amount": 729
+                }
+            ]
+        },
+        {
+            "categoryName": "Meal",
+            "item": [
+                {
+                    "image": "https://images.unsplash.com/photo-1492683962492-deef0ec456c0?q=80&w=2912&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "title": "Chicken Wings",
+                    "description": "Chicken Livers Topped with PERi-PERi Sauce, Served with A Roll To Soak Up The Sauce.",
+                    "amount": 122
+                },
+                {
+                    "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "title": "Mighty Chicken Patty Burger",
+                    "description": "It is a long established fact that a reader will be distracted.",
+                    "amount": 302
+                },
+                {
+                    "image": "https://images.unsplash.com/photo-1513442542250-854d436a73f2?q=80&w=2747&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "title": "Chicken Livers and Portuguese Roll",
+                    "description": "It is a long established fact that a reader will be distracted.",
+                    "amount": 384
+                },
+                {
+                    "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=2946&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "title": "Spicy Mixed Olives",
+                    "description": "It is a long established fact that a reader will be distracted.",
+                    "amount": 102
+                }
+            ]
+        },
+        {
+            "categoryName": "Pizza",
+            "item": [
+                {
+                    "image": "https://images.unsplash.com/photo-1587314168485-3236d6710814?q=80&w=2878&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "title": "The Cheese Cake Factory",
+                    "description": "Chicken Livers Topped with PERi-PERi Sauce, Served with A Roll To Soak Up The Sauce.",
+                    "amount": 129
+                },
+                {
+                    "image": "https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "title": "California Pizza Kitchen",
+                    "description": "It is a long established fact that a reader will be distracted.",
+                    "amount": 72
+                },
+                {
+                    "image": "https://images.unsplash.com/photo-1579372786545-d24232daf58c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "title": "Chicken Livers and Portuguese Roll",
+                    "description": "It is a long established fact that a reader will be distracted.",
+                    "amount": 640
+                },
+                {
+                    "image": "https://images.unsplash.com/photo-1469533778471-92a68acc3633?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "title": "Spicy Mixed Olives",
+                    "description": "It is a long established fact that a reader will be distracted.",
+                    "amount": 99
+                }
+            ]
+        }
+    ]
+}
