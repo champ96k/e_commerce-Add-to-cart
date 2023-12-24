@@ -1,4 +1,4 @@
-import 'package:e_commerce_app/features/home_screen/data/models/restaurant_details_model.dart';
+import 'package:e_commerce_app/features/cart/data/models/cart_item.dart';
 import 'package:flutter/material.dart';
 
 import 'restaurants_list_item.dart';
@@ -6,7 +6,7 @@ import 'restaurants_list_item.dart';
 class RestaurantsList extends StatelessWidget {
   const RestaurantsList({super.key, required this.item});
 
-  final List<Item> item;
+  final List<CartItem> item;
 
   @override
   Widget build(BuildContext context) {

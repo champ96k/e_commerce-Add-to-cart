@@ -36,7 +36,7 @@ _$CategoryImpl _$$CategoryImplFromJson(Map<String, dynamic> json) =>
     _$CategoryImpl(
       categoryName: json['categoryName'] as String,
       item: (json['item'] as List<dynamic>)
-          .map((e) => Item.fromJson(e as Map<String, dynamic>))
+          .map((e) => CartItem.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
@@ -44,19 +44,4 @@ Map<String, dynamic> _$$CategoryImplToJson(_$CategoryImpl instance) =>
     <String, dynamic>{
       'categoryName': instance.categoryName,
       'item': instance.item,
-    };
-
-_$ItemImpl _$$ItemImplFromJson(Map<String, dynamic> json) => _$ItemImpl(
-      image: json['image'] as String?,
-      title: json['title'] as String,
-      description: json['description'] as String,
-      amount: json['amount'] as int,
-    );
-
-Map<String, dynamic> _$$ItemImplToJson(_$ItemImpl instance) =>
-    <String, dynamic>{
-      'image': instance.image,
-      'title': instance.title,
-      'description': instance.description,
-      'amount': instance.amount,
     };
