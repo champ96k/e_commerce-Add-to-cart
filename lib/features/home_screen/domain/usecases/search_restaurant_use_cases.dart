@@ -1,12 +1,13 @@
+import 'package:e_commerce_app/features/cart/data/models/cart_item.dart';
 import 'package:e_commerce_app/features/home_screen/data/models/restaurant_details_model.dart';
 
 class SearchRestaurantUseCases {
   /// Asynchronous function to search for items based on a search query
   ///  within a list of categories
-  Future<List<Item>> getSearchItem(
+  Future<List<CartItem>> getSearchItem(
       List<Category> category, String searchQuery) async {
     /// Initialize an empty list to store the search results
-    final _result = <Item>[];
+    final _result = <CartItem>[];
 
     /// Iterate through each category in the provided list
     for (final e in category) {

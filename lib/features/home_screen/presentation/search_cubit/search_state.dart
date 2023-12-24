@@ -3,7 +3,7 @@ part of 'search_cubit.dart';
 abstract class SearchState extends Equatable {}
 
 class SearchFilterState extends SearchState {
-  final List<Item> searchItem;
+  final List<CartItem> searchItem;
   final List<Category> category;
   final String message;
 

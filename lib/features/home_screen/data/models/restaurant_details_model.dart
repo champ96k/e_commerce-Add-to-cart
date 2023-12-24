@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/features/cart/data/models/cart_item.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'restaurant_details_model.freezed.dart';
@@ -25,21 +26,9 @@ class RestaurantDetailsModel with _$RestaurantDetailsModel {
 class Category with _$Category {
   const factory Category({
     required String categoryName,
-    required List<Item> item,
+    required List<CartItem> item,
   }) = _Category;
 
   factory Category.fromJson(Map<String, dynamic> json) =>
       _$CategoryFromJson(json);
-}
-
-@freezed
-class Item with _$Item {
-  const factory Item({
-    String? image,
-    required String title,
-    required String description,
-    required int amount,
-  }) = _Item;
-
-  factory Item.fromJson(Map<String, dynamic> json) => _$ItemFromJson(json);
 }

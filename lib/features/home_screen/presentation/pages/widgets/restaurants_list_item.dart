@@ -1,12 +1,12 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:e_commerce_app/core/constants/constants.dart';
-import 'package:e_commerce_app/features/home_screen/data/models/restaurant_details_model.dart';
-import 'package:e_commerce_app/src/widget/primary_icon_button.dart';
+import 'package:e_commerce_app/features/cart/data/models/cart_item.dart';
 import 'package:flutter/material.dart';
+
+import 'components/cart_add_remove_button.dart';
 
 class RestaurantsListItem extends StatelessWidget {
   const RestaurantsListItem({super.key, required this.element});
-  final Item element;
+  final CartItem element;
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +27,7 @@ class RestaurantsListItem extends StatelessWidget {
           ClipRRect(
             borderRadius: BorderRadius.circular(10.0),
             child: CachedNetworkImage(
-              imageUrl: element.image ?? Constants.placeholderImage,
+              imageUrl: element.image,
               height: 120.0,
               width: 120.0,
               fit: BoxFit.cover,
@@ -80,25 +80,7 @@ class RestaurantsListItem extends StatelessWidget {
                       ),
                     ),
                     const Spacer(),
-                    const PrimaryIconButton(
-                      icon: Icons.remove,
-                      color: Color(0xff11B546),
-                    ),
-                    SizedBox(width: size.width * 0.03),
-                    const Text(
-                      "1",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 14.0,
-                        fontWeight: FontWeight.w600,
-                        letterSpacing: 0.28,
-                      ),
-                    ),
-                    SizedBox(width: size.width * 0.03),
-                    const PrimaryIconButton(
-                      icon: Icons.add,
-                      color: Color(0xff11B546),
-                    ),
+                    CartAddRemoveButton(item: element),
                   ],
                 ),
               ],

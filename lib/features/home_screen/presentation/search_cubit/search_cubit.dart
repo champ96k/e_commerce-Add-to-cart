@@ -1,8 +1,9 @@
-import 'package:bloc/bloc.dart';
+import 'package:e_commerce_app/features/cart/data/models/cart_item.dart';
 import 'package:e_commerce_app/features/home_screen/data/models/restaurant_details_model.dart';
 import 'package:e_commerce_app/features/home_screen/domain/usecases/search_restaurant_use_cases.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 part 'search_state.dart';
 
@@ -52,7 +53,7 @@ class SearchCubit extends Cubit<SearchState> {
   }
 
   //To emit a new state based on the search results
-  void _emitState(List<Item> searchItem) {
+  void _emitState(List<CartItem> searchItem) {
     emit(
       SearchFilterState(
         searchItem: searchItem,
