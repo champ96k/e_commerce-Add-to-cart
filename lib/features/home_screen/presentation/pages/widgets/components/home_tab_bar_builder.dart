@@ -1,6 +1,9 @@
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:e_commerce_app/core/app_configs/screen_names.dart';
 import 'package:e_commerce_app/features/home_screen/presentation/cubit/home_screen_cubit.dart';
 import 'package:e_commerce_app/features/home_screen/presentation/pages/widgets/restaurants_header/restaurants_header.dart';
 import 'package:e_commerce_app/features/home_screen/presentation/pages/widgets/restaurants_list.dart';
+import 'package:e_commerce_app/src/widget/primary_icon_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -24,6 +27,40 @@ class HomeTabBarBuilder extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                Container(
+                  height: size.height * 0.2,
+                  width: size.width,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: CachedNetworkImageProvider(model.backgroundImage),
+                      colorFilter: ColorFilter.mode(
+                        Colors.black.withOpacity(0.4),
+                        BlendMode.colorBurn,
+                      ),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      PrimaryIconButton(
+                        color: Colors.white,
+                        icon: Icons.search,
+                        borderColor: Colors.white,
+                        height: 32.0,
+                        width: 32.0,
+                        onTap: () => _searchButtonOnTap(context),
+                      ),
+                      SizedBox(width: size.width * 0.06),
+                      const PrimaryIconButton(
+                        icon: Icons.share,
+                        height: 32.0,
+                        width: 32.0,
+                      ),
+                      const SizedBox(width: 16.0),
+                    ],
+                  ),
+                ),
                 RestaurantsHeader(model: model),
                 SizedBox(height: size.height * 0.01),
                 Container(
@@ -71,5 +108,15 @@ class HomeTabBarBuilder extends StatelessWidget {
         }
       },
     );
+  }
+
+  void _searchButtonOnTap(BuildContext context) {
+    final category = context.read<HomeScreenCubit>().category;
+    if (category.isNotEmpty) {
+      Navigator.of(context).pushNamed(
+        ScreenNames.searchScreen,
+        arguments: {'category': category},
+      );
+    }
   }
 }

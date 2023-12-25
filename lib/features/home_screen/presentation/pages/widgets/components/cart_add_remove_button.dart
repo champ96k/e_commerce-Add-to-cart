@@ -25,7 +25,9 @@ class CartAddRemoveButton extends StatelessWidget {
         children: [
           PrimaryIconButton(
             icon: Icons.remove,
-            color: _quantity > 0 ? const Color(0xff11B546) : Colors.grey,
+            color: _quantity > 0
+                ? const Color(0xff11B546).withOpacity(0.4)
+                : Colors.grey.withOpacity(0.4),
             onTap: () => _quantity > 0 ? _cubit.removeCartItem(item) : null,
           ),
           SizedBox(width: size.width * 0.03),
@@ -41,7 +43,7 @@ class CartAddRemoveButton extends StatelessWidget {
           SizedBox(width: size.width * 0.03),
           PrimaryIconButton(
             icon: Icons.add,
-            color: const Color(0xff11B546),
+            color: const Color(0xff11B546).withOpacity(0.4),
             onTap: () => _cubit.addToCart(item),
           ),
         ],

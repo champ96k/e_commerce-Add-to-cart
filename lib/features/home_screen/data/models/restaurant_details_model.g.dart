@@ -10,6 +10,7 @@ _$RestaurantDetailsModelImpl _$$RestaurantDetailsModelImplFromJson(
         Map<String, dynamic> json) =>
     _$RestaurantDetailsModelImpl(
       name: json['name'] as String,
+      backgroundImage: json['backgroundImage'] as String,
       description: json['description'] as String,
       ratings: (json['ratings'] as num).toDouble(),
       totalReview: json['totalReview'] as String,
@@ -24,6 +25,7 @@ Map<String, dynamic> _$$RestaurantDetailsModelImplToJson(
         _$RestaurantDetailsModelImpl instance) =>
     <String, dynamic>{
       'name': instance.name,
+      'backgroundImage': instance.backgroundImage,
       'description': instance.description,
       'ratings': instance.ratings,
       'totalReview': instance.totalReview,

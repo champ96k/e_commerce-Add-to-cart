@@ -5,27 +5,33 @@ class PrimaryIconButton extends StatelessWidget {
     super.key,
     required this.icon,
     this.color = Colors.white,
+    this.borderColor = Colors.transparent,
     this.iconSize = 16.0,
     this.onTap,
+    this.height = 28.0,
+    this.width = 28.0,
   });
 
   final IconData icon;
   final double iconSize;
   final Color color;
+  final Color borderColor;
   final Function()? onTap;
+  final double height;
+  final double width;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        width: 28.0,
-        height: 28.0,
+        width: width,
+        height: height,
         alignment: Alignment.center,
         decoration: BoxDecoration(
-          border: Border.all(color: color),
-          color: color.withOpacity(0.4),
-          borderRadius: BorderRadius.circular(4.0),
+          border: Border.all(color: borderColor),
+          color: color,
+          borderRadius: BorderRadius.circular(6.0),
         ),
         child: Icon(
           icon,

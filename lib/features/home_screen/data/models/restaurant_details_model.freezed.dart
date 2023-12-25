@@ -22,6 +22,7 @@ RestaurantDetailsModel _$RestaurantDetailsModelFromJson(
 /// @nodoc
 mixin _$RestaurantDetailsModel {
   String get name => throw _privateConstructorUsedError;
+  String get backgroundImage => throw _privateConstructorUsedError;
   String get description => throw _privateConstructorUsedError;
   double get ratings => throw _privateConstructorUsedError;
   String get totalReview => throw _privateConstructorUsedError;
@@ -43,6 +44,7 @@ abstract class $RestaurantDetailsModelCopyWith<$Res> {
   @useResult
   $Res call(
       {String name,
+      String backgroundImage,
       String description,
       double ratings,
       String totalReview,
@@ -66,6 +68,7 @@ class _$RestaurantDetailsModelCopyWithImpl<$Res,
   @override
   $Res call({
     Object? name = null,
+    Object? backgroundImage = null,
     Object? description = null,
     Object? ratings = null,
     Object? totalReview = null,
@@ -77,6 +80,10 @@ class _$RestaurantDetailsModelCopyWithImpl<$Res,
       name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      backgroundImage: null == backgroundImage
+          ? _value.backgroundImage
+          : backgroundImage // ignore: cast_nullable_to_non_nullable
               as String,
       description: null == description
           ? _value.description
@@ -117,6 +124,7 @@ abstract class _$$RestaurantDetailsModelImplCopyWith<$Res>
   @useResult
   $Res call(
       {String name,
+      String backgroundImage,
       String description,
       double ratings,
       String totalReview,
@@ -139,6 +147,7 @@ class __$$RestaurantDetailsModelImplCopyWithImpl<$Res>
   @override
   $Res call({
     Object? name = null,
+    Object? backgroundImage = null,
     Object? description = null,
     Object? ratings = null,
     Object? totalReview = null,
@@ -150,6 +159,10 @@ class __$$RestaurantDetailsModelImplCopyWithImpl<$Res>
       name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      backgroundImage: null == backgroundImage
+          ? _value.backgroundImage
+          : backgroundImage // ignore: cast_nullable_to_non_nullable
               as String,
       description: null == description
           ? _value.description
@@ -184,6 +197,7 @@ class __$$RestaurantDetailsModelImplCopyWithImpl<$Res>
 class _$RestaurantDetailsModelImpl implements _RestaurantDetailsModel {
   const _$RestaurantDetailsModelImpl(
       {required this.name,
+      required this.backgroundImage,
       required this.description,
       required this.ratings,
       required this.totalReview,
@@ -197,6 +211,8 @@ class _$RestaurantDetailsModelImpl implements _RestaurantDetailsModel {
 
   @override
   final String name;
+  @override
+  final String backgroundImage;
   @override
   final String description;
   @override
@@ -218,7 +234,7 @@ class _$RestaurantDetailsModelImpl implements _RestaurantDetailsModel {
 
   @override
   String toString() {
-    return 'RestaurantDetailsModel(name: $name, description: $description, ratings: $ratings, totalReview: $totalReview, deliveryTime: $deliveryTime, category: $category, shareLink: $shareLink)';
+    return 'RestaurantDetailsModel(name: $name, backgroundImage: $backgroundImage, description: $description, ratings: $ratings, totalReview: $totalReview, deliveryTime: $deliveryTime, category: $category, shareLink: $shareLink)';
   }
 
   @override
@@ -227,6 +243,8 @@ class _$RestaurantDetailsModelImpl implements _RestaurantDetailsModel {
         (other.runtimeType == runtimeType &&
             other is _$RestaurantDetailsModelImpl &&
             (identical(other.name, name) || other.name == name) &&
+            (identical(other.backgroundImage, backgroundImage) ||
+                other.backgroundImage == backgroundImage) &&
             (identical(other.description, description) ||
                 other.description == description) &&
             (identical(other.ratings, ratings) || other.ratings == ratings) &&
@@ -244,6 +262,7 @@ class _$RestaurantDetailsModelImpl implements _RestaurantDetailsModel {
   int get hashCode => Object.hash(
       runtimeType,
       name,
+      backgroundImage,
       description,
       ratings,
       totalReview,
@@ -269,6 +288,7 @@ class _$RestaurantDetailsModelImpl implements _RestaurantDetailsModel {
 abstract class _RestaurantDetailsModel implements RestaurantDetailsModel {
   const factory _RestaurantDetailsModel(
       {required final String name,
+      required final String backgroundImage,
       required final String description,
       required final double ratings,
       required final String totalReview,
@@ -281,6 +301,8 @@ abstract class _RestaurantDetailsModel implements RestaurantDetailsModel {
 
   @override
   String get name;
+  @override
+  String get backgroundImage;
   @override
   String get description;
   @override

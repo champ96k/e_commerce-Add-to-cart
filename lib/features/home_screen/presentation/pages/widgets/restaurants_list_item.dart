@@ -43,7 +43,6 @@ class RestaurantsListItem extends StatelessWidget {
           SizedBox(width: size.width * 0.03),
           Expanded(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisSize: MainAxisSize.max,
               children: [
@@ -56,6 +55,7 @@ class RestaurantsListItem extends StatelessWidget {
                     letterSpacing: 0.28,
                   ),
                 ),
+                const SizedBox(height: 4.0),
                 Text(
                   element.description,
                   maxLines: 2,
@@ -67,7 +67,7 @@ class RestaurantsListItem extends StatelessWidget {
                     letterSpacing: 0.28,
                   ),
                 ),
-                SizedBox(height: size.height * 0.01),
+                SizedBox(height: size.height * 0.02),
                 Row(
                   children: [
                     Text(
