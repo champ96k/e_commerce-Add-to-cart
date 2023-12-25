@@ -14,7 +14,7 @@ class RestaurantsList extends StatelessWidget {
       return const SizedBox();
     }
     return ListView.builder(
-      padding: const EdgeInsets.all(16.0),
+      padding: const EdgeInsets.all(12.0),
       itemCount: item.length,
       keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
       shrinkWrap: true,

@@ -9,6 +9,7 @@ class RestaurantsHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final _size = MediaQuery.of(context).size;
     return Padding(
       padding: const EdgeInsets.all(16.0),
       child: Row(
@@ -38,9 +39,10 @@ class RestaurantsHeader extends StatelessWidget {
                   letterSpacing: 0.28,
                 ),
               ),
-              const SizedBox(height: 16.0),
+              SizedBox(height: _size.height * 0.02),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   RestaurantsHeaderIconButton(
                     text: '${model.ratings}',

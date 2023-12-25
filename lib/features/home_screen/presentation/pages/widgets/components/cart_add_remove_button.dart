@@ -30,9 +30,9 @@ class CartAddRemoveButton extends StatelessWidget {
                 : Colors.grey.withOpacity(0.4),
             onTap: () => _quantity > 0 ? _cubit.removeCartItem(item) : null,
           ),
-          SizedBox(width: size.width * 0.03),
+          SizedBox(width: size.width * 0.01),
           Text(
-            "$_quantity",
+            " $_quantity ",
             style: const TextStyle(
               color: Colors.black,
               fontSize: 14.0,
@@ -40,7 +40,7 @@ class CartAddRemoveButton extends StatelessWidget {
               letterSpacing: 0.28,
             ),
           ),
-          SizedBox(width: size.width * 0.03),
+          SizedBox(width: size.width * 0.01),
           PrimaryIconButton(
             icon: Icons.add,
             color: const Color(0xff11B546).withOpacity(0.4),

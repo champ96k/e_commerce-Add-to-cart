@@ -17,7 +17,7 @@ class CartFooter extends StatelessWidget {
       alignment: Alignment.bottomCenter,
       child: Container(
         alignment: Alignment.center,
-        height: _size.height * 0.08,
+        height: _size.height * 0.1,
         width: _size.width,
         decoration: const BoxDecoration(
           boxShadow: [

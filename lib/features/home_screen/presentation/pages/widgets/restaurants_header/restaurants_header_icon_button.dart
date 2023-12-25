@@ -19,8 +19,8 @@ class RestaurantsHeaderIconButton extends StatelessWidget {
       padding: EdgeInsets.only(right: _size.width * 0.03),
       child: Row(
         children: [
-          Icon(icon, color: iconColor),
-          const SizedBox(width: 8.0),
+          Icon(icon, color: iconColor, size: 18.0),
+          SizedBox(width: _size.width * 0.01),
           Text(text),
         ],
       ),

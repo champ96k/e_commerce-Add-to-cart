@@ -23,6 +23,7 @@ class RestaurantsListItem extends StatelessWidget {
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           ClipRRect(
             borderRadius: BorderRadius.circular(10.0),

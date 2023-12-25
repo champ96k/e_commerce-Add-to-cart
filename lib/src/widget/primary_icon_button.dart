@@ -8,8 +8,8 @@ class PrimaryIconButton extends StatelessWidget {
     this.borderColor = Colors.transparent,
     this.iconSize = 16.0,
     this.onTap,
-    this.height = 28.0,
-    this.width = 28.0,
+    this.height = 24.0,
+    this.width = 24.0,
   });
 
   final IconData icon;

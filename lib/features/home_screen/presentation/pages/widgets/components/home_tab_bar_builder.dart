@@ -30,6 +30,8 @@ class HomeTabBarBuilder extends StatelessWidget {
                 Container(
                   height: size.height * 0.2,
                   width: size.width,
+                  padding: EdgeInsets.only(top: size.height * 0.05),
+                  alignment: Alignment.topRight,
                   decoration: BoxDecoration(
                     image: DecorationImage(
                       image: CachedNetworkImageProvider(model.backgroundImage),
