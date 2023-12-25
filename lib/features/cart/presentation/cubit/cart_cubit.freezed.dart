@@ -19,6 +19,7 @@ mixin _$CartState {
   BuiltList<CartItem> get items => throw _privateConstructorUsedError;
   double get totalAmount => throw _privateConstructorUsedError;
   int get totalCartItem => throw _privateConstructorUsedError;
+  String get errorMessage => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $CartStateCopyWith<CartState> get copyWith =>
@@ -30,7 +31,11 @@ abstract class $CartStateCopyWith<$Res> {
   factory $CartStateCopyWith(CartState value, $Res Function(CartState) then) =
       _$CartStateCopyWithImpl<$Res, CartState>;
   @useResult
-  $Res call({BuiltList<CartItem> items, double totalAmount, int totalCartItem});
+  $Res call(
+      {BuiltList<CartItem> items,
+      double totalAmount,
+      int totalCartItem,
+      String errorMessage});
 }
 
 /// @nodoc
@@ -49,6 +54,7 @@ class _$CartStateCopyWithImpl<$Res, $Val extends CartState>
     Object? items = null,
     Object? totalAmount = null,
     Object? totalCartItem = null,
+    Object? errorMessage = null,
   }) {
     return _then(_value.copyWith(
       items: null == items
@@ -63,6 +69,10 @@ class _$CartStateCopyWithImpl<$Res, $Val extends CartState>
           ? _value.totalCartItem
           : totalCartItem // ignore: cast_nullable_to_non_nullable
               as int,
+      errorMessage: null == errorMessage
+          ? _value.errorMessage
+          : errorMessage // ignore: cast_nullable_to_non_nullable
+              as String,
     ) as $Val);
   }
 }
@@ -75,7 +85,11 @@ abstract class _$$CartStateImplCopyWith<$Res>
       __$$CartStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({BuiltList<CartItem> items, double totalAmount, int totalCartItem});
+  $Res call(
+      {BuiltList<CartItem> items,
+      double totalAmount,
+      int totalCartItem,
+      String errorMessage});
 }
 
 /// @nodoc
@@ -92,6 +106,7 @@ class __$$CartStateImplCopyWithImpl<$Res>
     Object? items = null,
     Object? totalAmount = null,
     Object? totalCartItem = null,
+    Object? errorMessage = null,
   }) {
     return _then(_$CartStateImpl(
       items: null == items
@@ -106,6 +121,10 @@ class __$$CartStateImplCopyWithImpl<$Res>
           ? _value.totalCartItem
           : totalCartItem // ignore: cast_nullable_to_non_nullable
               as int,
+      errorMessage: null == errorMessage
+          ? _value.errorMessage
+          : errorMessage // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -114,7 +133,10 @@ class __$$CartStateImplCopyWithImpl<$Res>
 
 class _$CartStateImpl implements _CartState {
   const _$CartStateImpl(
-      {required this.items, this.totalAmount = 0, this.totalCartItem = 0});
+      {required this.items,
+      this.totalAmount = 0,
+      this.totalCartItem = 0,
+      this.errorMessage = ''});
 
   @override
   final BuiltList<CartItem> items;
@@ -124,10 +146,13 @@ class _$CartStateImpl implements _CartState {
   @override
   @JsonKey()
   final int totalCartItem;
+  @override
+  @JsonKey()
+  final String errorMessage;
 
   @override
   String toString() {
-    return 'CartState(items: $items, totalAmount: $totalAmount, totalCartItem: $totalCartItem)';
+    return 'CartState(items: $items, totalAmount: $totalAmount, totalCartItem: $totalCartItem, errorMessage: $errorMessage)';
   }
 
   @override
@@ -139,12 +164,18 @@ class _$CartStateImpl implements _CartState {
             (identical(other.totalAmount, totalAmount) ||
                 other.totalAmount == totalAmount) &&
             (identical(other.totalCartItem, totalCartItem) ||
-                other.totalCartItem == totalCartItem));
+                other.totalCartItem == totalCartItem) &&
+            (identical(other.errorMessage, errorMessage) ||
+                other.errorMessage == errorMessage));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType,
-      const DeepCollectionEquality().hash(items), totalAmount, totalCartItem);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(items),
+      totalAmount,
+      totalCartItem,
+      errorMessage);
 
   @JsonKey(ignore: true)
   @override
@@ -157,7 +188,8 @@ abstract class _CartState implements CartState {
   const factory _CartState(
       {required final BuiltList<CartItem> items,
       final double totalAmount,
-      final int totalCartItem}) = _$CartStateImpl;
+      final int totalCartItem,
+      final String errorMessage}) = _$CartStateImpl;
 
   @override
   BuiltList<CartItem> get items;
@@ -165,6 +197,8 @@ abstract class _CartState implements CartState {
   double get totalAmount;
   @override
   int get totalCartItem;
+  @override
+  String get errorMessage;
   @override
   @JsonKey(ignore: true)
   _$$CartStateImplCopyWith<_$CartStateImpl> get copyWith =>

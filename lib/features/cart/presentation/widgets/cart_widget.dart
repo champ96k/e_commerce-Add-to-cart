@@ -3,15 +3,26 @@ import 'package:e_commerce_app/features/cart/presentation/widgets/components/car
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../core/utils/commen_extensions.dart';
+
 class CartWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<CartCubit, CartState>(
+    return BlocConsumer<CartCubit, CartState>(
+      listener: (context, state) {
+        if (state.errorMessage.isNotEmpty) {
+          state.errorMessage.showSnackBar(context);
+        }
+      },
       builder: (context, state) {
-        return CartFooter(
-          itemsLength: state.totalCartItem,
-          totalAmount: state.totalAmount,
-        );
+        if (state.totalCartItem <= 0) {
+          return const SizedBox();
+        } else {
+          return CartFooter(
+            itemsLength: state.totalCartItem,
+            totalAmount: state.totalAmount,
+          );
+        }
       },
     );
   }

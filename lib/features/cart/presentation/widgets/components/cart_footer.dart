@@ -34,8 +34,30 @@ class CartFooter extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 32.0),
           child: Row(
             children: [
-              Text("$itemsLength item  | "),
-              Text("₹ $totalAmount"),
+              Text(
+                "$itemsLength item",
+                style: const TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.w600,
+                  fontSize: 14.0,
+                  letterSpacing: 0.28,
+                ),
+              ),
+              const Text(
+                '  |  ',
+                style: TextStyle(
+                  color: Colors.grey,
+                ),
+              ),
+              Text(
+                "₹ $totalAmount",
+                style: const TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.w600,
+                  fontSize: 14.0,
+                  letterSpacing: 0.28,
+                ),
+              ),
               const Spacer(),
               Container(
                 decoration: BoxDecoration(
@@ -44,7 +66,15 @@ class CartFooter extends StatelessWidget {
                 ),
                 child: const Padding(
                   padding: EdgeInsets.all(16.0),
-                  child: Text("View cart"),
+                  child: Text(
+                    "View cart",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w600,
+                      fontSize: 14.0,
+                      letterSpacing: 0.28,
+                    ),
+                  ),
                 ),
               ),
             ],
