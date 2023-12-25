@@ -8,14 +8,10 @@ class CartWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<CartCubit, CartState>(
       builder: (context, state) {
-        if (state is CartInfoState) {
-          return CartFooter(
-            itemsLength: state.cartItems?.length ?? 0,
-            totalAmount: state.totalAmount ?? 0.0,
-          );
-        } else {
-          return const SizedBox();
-        }
+        return CartFooter(
+          itemsLength: state.totalCartItem,
+          totalAmount: state.totalAmount,
+        );
       },
     );
   }

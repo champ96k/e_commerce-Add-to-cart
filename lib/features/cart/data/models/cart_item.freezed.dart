@@ -20,10 +20,11 @@ CartItem _$CartItemFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$CartItem {
-  String get title => throw _privateConstructorUsedError;
-  num get amount => throw _privateConstructorUsedError;
+  String get productId => throw _privateConstructorUsedError;
   String get image => throw _privateConstructorUsedError;
+  String get title => throw _privateConstructorUsedError;
   String get description => throw _privateConstructorUsedError;
+  double get amount => throw _privateConstructorUsedError;
   int get quantity => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -38,10 +39,11 @@ abstract class $CartItemCopyWith<$Res> {
       _$CartItemCopyWithImpl<$Res, CartItem>;
   @useResult
   $Res call(
-      {String title,
-      num amount,
+      {String productId,
       String image,
+      String title,
       String description,
+      double amount,
       int quantity});
 }
 
@@ -58,29 +60,34 @@ class _$CartItemCopyWithImpl<$Res, $Val extends CartItem>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? title = null,
-    Object? amount = null,
+    Object? productId = null,
     Object? image = null,
+    Object? title = null,
     Object? description = null,
+    Object? amount = null,
     Object? quantity = null,
   }) {
     return _then(_value.copyWith(
-      title: null == title
-          ? _value.title
-          : title // ignore: cast_nullable_to_non_nullable
+      productId: null == productId
+          ? _value.productId
+          : productId // ignore: cast_nullable_to_non_nullable
               as String,
-      amount: null == amount
-          ? _value.amount
-          : amount // ignore: cast_nullable_to_non_nullable
-              as num,
       image: null == image
           ? _value.image
           : image // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: null == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
               as String,
       description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
+      amount: null == amount
+          ? _value.amount
+          : amount // ignore: cast_nullable_to_non_nullable
+              as double,
       quantity: null == quantity
           ? _value.quantity
           : quantity // ignore: cast_nullable_to_non_nullable
@@ -98,10 +105,11 @@ abstract class _$$CartItemImplCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {String title,
-      num amount,
+      {String productId,
       String image,
+      String title,
       String description,
+      double amount,
       int quantity});
 }
 
@@ -116,29 +124,34 @@ class __$$CartItemImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? title = null,
-    Object? amount = null,
+    Object? productId = null,
     Object? image = null,
+    Object? title = null,
     Object? description = null,
+    Object? amount = null,
     Object? quantity = null,
   }) {
     return _then(_$CartItemImpl(
-      title: null == title
-          ? _value.title
-          : title // ignore: cast_nullable_to_non_nullable
+      productId: null == productId
+          ? _value.productId
+          : productId // ignore: cast_nullable_to_non_nullable
               as String,
-      amount: null == amount
-          ? _value.amount
-          : amount // ignore: cast_nullable_to_non_nullable
-              as num,
       image: null == image
           ? _value.image
           : image // ignore: cast_nullable_to_non_nullable
+              as String,
+      title: null == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
               as String,
       description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
+      amount: null == amount
+          ? _value.amount
+          : amount // ignore: cast_nullable_to_non_nullable
+              as double,
       quantity: null == quantity
           ? _value.quantity
           : quantity // ignore: cast_nullable_to_non_nullable
@@ -151,30 +164,33 @@ class __$$CartItemImplCopyWithImpl<$Res>
 @JsonSerializable()
 class _$CartItemImpl implements _CartItem {
   const _$CartItemImpl(
-      {required this.title,
-      required this.amount,
+      {required this.productId,
       required this.image,
+      required this.title,
       required this.description,
+      required this.amount,
       this.quantity = 0});
 
   factory _$CartItemImpl.fromJson(Map<String, dynamic> json) =>
       _$$CartItemImplFromJson(json);
 
   @override
-  final String title;
-  @override
-  final num amount;
+  final String productId;
   @override
   final String image;
   @override
+  final String title;
+  @override
   final String description;
+  @override
+  final double amount;
   @override
   @JsonKey()
   final int quantity;
 
   @override
   String toString() {
-    return 'CartItem(title: $title, amount: $amount, image: $image, description: $description, quantity: $quantity)';
+    return 'CartItem(productId: $productId, image: $image, title: $title, description: $description, amount: $amount, quantity: $quantity)';
   }
 
   @override
@@ -182,19 +198,21 @@ class _$CartItemImpl implements _CartItem {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$CartItemImpl &&
-            (identical(other.title, title) || other.title == title) &&
-            (identical(other.amount, amount) || other.amount == amount) &&
+            (identical(other.productId, productId) ||
+                other.productId == productId) &&
             (identical(other.image, image) || other.image == image) &&
+            (identical(other.title, title) || other.title == title) &&
             (identical(other.description, description) ||
                 other.description == description) &&
+            (identical(other.amount, amount) || other.amount == amount) &&
             (identical(other.quantity, quantity) ||
                 other.quantity == quantity));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, title, amount, image, description, quantity);
+  int get hashCode => Object.hash(
+      runtimeType, productId, image, title, description, amount, quantity);
 
   @JsonKey(ignore: true)
   @override
@@ -212,23 +230,26 @@ class _$CartItemImpl implements _CartItem {
 
 abstract class _CartItem implements CartItem {
   const factory _CartItem(
-      {required final String title,
-      required final num amount,
+      {required final String productId,
       required final String image,
+      required final String title,
       required final String description,
+      required final double amount,
       final int quantity}) = _$CartItemImpl;
 
   factory _CartItem.fromJson(Map<String, dynamic> json) =
       _$CartItemImpl.fromJson;
 
   @override
-  String get title;
-  @override
-  num get amount;
+  String get productId;
   @override
   String get image;
   @override
+  String get title;
+  @override
   String get description;
+  @override
+  double get amount;
   @override
   int get quantity;
   @override

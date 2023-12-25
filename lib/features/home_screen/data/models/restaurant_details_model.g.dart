@@ -10,8 +10,8 @@ _$RestaurantDetailsModelImpl _$$RestaurantDetailsModelImplFromJson(
         Map<String, dynamic> json) =>
     _$RestaurantDetailsModelImpl(
       name: json['name'] as String,
-      dscription: json['dscription'] as String,
-      review: (json['review'] as num).toDouble(),
+      description: json['description'] as String,
+      ratings: (json['ratings'] as num).toDouble(),
       totalReview: json['totalReview'] as String,
       deliveryTime: json['deliveryTime'] as int,
       category: (json['category'] as List<dynamic>)
@@ -24,8 +24,8 @@ Map<String, dynamic> _$$RestaurantDetailsModelImplToJson(
         _$RestaurantDetailsModelImpl instance) =>
     <String, dynamic>{
       'name': instance.name,
-      'dscription': instance.dscription,
-      'review': instance.review,
+      'description': instance.description,
+      'ratings': instance.ratings,
       'totalReview': instance.totalReview,
       'deliveryTime': instance.deliveryTime,
       'category': instance.category,

@@ -1,8 +1,8 @@
 {
     "shareLink": "https://github.com/champ96k",
     "name": "Amerika Foods",
-    "dscription": "American, Fast Food, Burgers",
-    "review": 4.3,
+    "description": "American, Fast Food, Burgers",
+    "ratings": 4.3,
     "totalReview": "1.2k+",
     "deliveryTime": 15,
     "category": [
@@ -10,51 +10,59 @@
             "categoryName": "Recommended",
             "item": [
                 {
+                    "productId": "1a",
                     "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     "title": "Chicken Crunch Burger",
-                    "description": "It is a long established fact that a reader will be distracted.",
+                    "description": "Delicious chicken crunch burger that will leave you craving for more.",
                     "amount": 209
                 },
                 {
+                    "productId": "1b",
                     "image": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     "title": "Mighty Chicken Patty Burger",
-                    "description": "It is a long established fact that a reader will be distracted.",
+                    "description": "A mighty chicken patty burger that will satisfy your hunger.",
                     "amount": 107
                 },
                 {
+                    "productId": "1c",
                     "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     "title": "Donut Header Chicken",
-                    "description": "It is a long established fact that a reader will be distracted.",
+                    "description": "A unique donut header chicken that will surprise your taste buds.",
                     "amount": 155
                 },
                 {
+                    "productId": "1d",
                     "image": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9",
                     "title": "Donut Chicken",
-                    "description": "It is a long established fact that a reader will be distracted.",
+                    "description": "A delightful donut chicken that combines sweetness and savoriness.",
                     "amount": 432
                 },
                 {
+                    "productId": "1e",
                     "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     "title": "Chicken Crunch Burger",
-                    "description": "It is a long established fact that a reader will be distracted.",
+                    "description": "A classic chicken crunch burger that never goes out of style.",
                     "amount": 329
                 },
                 {
+                    "productId": "1f",
                     "image": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     "title": "Mighty Chicken Patty Burger",
-                    "description": "It is a long established fact that a reader will be distracted.",
+                    "description": "An irresistibly mighty chicken patty burger for your cravings.",
                     "amount": 89
                 },
                 {
+                    "productId": "1g",
                     "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     "title": "Donut Header Chicken",
-                    "description": "It is a long established fact that a reader will be distracted.",
+                    "description": "A donut header chicken that will make your taste buds dance.",
                     "amount": 22
                 },
                 {
+                    "productId": "1h",
                     "image": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9",
                     "title": "Donut Chicken",
-                    "description": "It is a long established fact that a reader will be distracted.",
+                    "description": "A scrumptious donut chicken that will leave you wanting more.",
                     "amount": 99
                 }
             ]
@@ -63,27 +71,31 @@
             "categoryName": "Combos",
             "item": [
                 {
+                    "productId": "2a",
                     "image": "https://images.unsplash.com/photo-1492683962492-deef0ec456c0?q=80&w=2912&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                    "title": "Chicken Wings",
-                    "description": "Chicken Livers Topped with PERi-PERi Sauce, Served with A Roll To Soak Up The Sauce.",
+                    "title": "Chicken Wings Combo",
+                    "description": "Delicious chicken wings topped with PERi-PERi sauce, served with a roll.",
                     "amount": 122
                 },
                 {
+                    "productId": "2b",
                     "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                    "title": "Mighty Chicken Patty Burger",
-                    "description": "It is a long established fact that a reader will be distracted.",
+                    "title": "Mighty Chicken Patty Burger Combo",
+                    "description": "A combo featuring the mighty chicken patty burger for a satisfying meal.",
                     "amount": 302
                 },
                 {
+                    "productId": "2c",
                     "image": "https://images.unsplash.com/photo-1513442542250-854d436a73f2?q=80&w=2747&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                    "title": "Chicken Livers and Portuguese Roll",
-                    "description": "It is a long established fact that a reader will be distracted.",
+                    "title": "Chicken Livers and Portuguese Roll Combo",
+                    "description": "Chicken livers topped with PERi-PERi sauce, served with a Portuguese roll.",
                     "amount": 384
                 },
                 {
+                    "productId": "2d",
                     "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=2946&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                    "title": "Spicy Mixed Olives",
-                    "description": "It is a long established fact that a reader will be distracted.",
+                    "title": "Spicy Mixed Olives Combo",
+                    "description": "A combo featuring spicy mixed olives for a flavorful experience.",
                     "amount": 102
                 }
             ]
@@ -92,27 +104,31 @@
             "categoryName": "Desserts",
             "item": [
                 {
+                    "productId": "3a",
                     "image": "https://images.unsplash.com/photo-1587314168485-3236d6710814?q=80&w=2878&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     "title": "The Cheese Cake Factory",
-                    "description": "Chicken Livers Topped with PERi-PERi Sauce, Served with A Roll To Soak Up The Sauce.",
+                    "description": "A delightful dessert from The Cheese Cake Factory for a sweet ending.",
                     "amount": 129
                 },
                 {
+                    "productId": "3b",
                     "image": "https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                    "title": "California Pizza Kitchen",
-                    "description": "It is a long established fact that a reader will be distracted.",
+                    "title": "California Pizza Kitchen Dessert",
+                    "description": "A tempting dessert from California Pizza Kitchen that will satisfy your sweet tooth.",
                     "amount": 72
                 },
                 {
+                    "productId": "3c",
                     "image": "https://images.unsplash.com/photo-1579372786545-d24232daf58c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                    "title": "Chicken Livers and Portuguese Roll",
-                    "description": "It is a long established fact that a reader will be distracted.",
+                    "title": "Chicken Livers and Portuguese Roll Dessert",
+                    "description": "A dessert featuring chicken livers and Portuguese roll for a unique flavor.",
                     "amount": 640
                 },
                 {
+                    "productId": "3d",
                     "image": "https://images.unsplash.com/photo-1469533778471-92a68acc3633?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                    "title": "Spicy Mixed Olives",
-                    "description": "It is a long established fact that a reader will be distracted.",
+                    "title": "Spicy Mixed Olives Dessert",
+                    "description": "A dessert featuring spicy mixed olives for a unique and spicy twist.",
                     "amount": 99
                 }
             ]
@@ -121,27 +137,31 @@
             "categoryName": "Sandwiches",
             "item": [
                 {
+                    "productId": "4a",
                     "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     "title": "Chicken Crunch Burger",
-                    "description": "It is a long established fact that a reader will be distracted.",
+                    "description": "Delicious chicken crunch burger that will leave you craving for more.",
                     "amount": 209
                 },
                 {
+                    "productId": "4b",
                     "image": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     "title": "Mighty Chicken Patty Burger",
-                    "description": "It is a long established fact that a reader will be distracted.",
+                    "description": "A mighty chicken patty burger that will satisfy your hunger.",
                     "amount": 107
                 },
                 {
+                    "productId": "4c",
                     "image": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     "title": "Donut Header Chicken",
-                    "description": "It is a long established fact that a reader will be distracted.",
+                    "description": "A unique donut header chicken that will surprise your taste buds.",
                     "amount": 155
                 },
                 {
+                    "productId": "4d",
                     "image": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9",
                     "title": "Donut Chicken",
-                    "description": "It is a long established fact that a reader will be distracted.",
+                    "description": "A delightful donut chicken that combines sweetness and savoriness.",
                     "amount": 729
                 }
             ]
@@ -150,28 +170,32 @@
             "categoryName": "Meal",
             "item": [
                 {
+                    "productId": "m883",
                     "image": "https://images.unsplash.com/photo-1492683962492-deef0ec456c0?q=80&w=2912&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     "title": "Chicken Wings",
                     "description": "Chicken Livers Topped with PERi-PERi Sauce, Served with A Roll To Soak Up The Sauce.",
-                    "amount": 122
+                    "amount": 212
                 },
                 {
+                    "productId": "m39874",
                     "image": "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     "title": "Mighty Chicken Patty Burger",
                     "description": "It is a long established fact that a reader will be distracted.",
-                    "amount": 302
+                    "amount": 104
                 },
                 {
+                    "productId": "m9292",
                     "image": "https://images.unsplash.com/photo-1513442542250-854d436a73f2?q=80&w=2747&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     "title": "Chicken Livers and Portuguese Roll",
                     "description": "It is a long established fact that a reader will be distracted.",
-                    "amount": 384
+                    "amount": 120
                 },
                 {
+                    "productId": "m2392",
                     "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=2946&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     "title": "Spicy Mixed Olives",
                     "description": "It is a long established fact that a reader will be distracted.",
-                    "amount": 102
+                    "amount": 921
                 }
             ]
         },
@@ -179,28 +203,32 @@
             "categoryName": "Pizza",
             "item": [
                 {
+                    "productId": "p302899",
                     "image": "https://images.unsplash.com/photo-1587314168485-3236d6710814?q=80&w=2878&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     "title": "The Cheese Cake Factory",
                     "description": "Chicken Livers Topped with PERi-PERi Sauce, Served with A Roll To Soak Up The Sauce.",
-                    "amount": 129
+                    "amount": 29
                 },
                 {
+                    "productId": "p93722",
                     "image": "https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     "title": "California Pizza Kitchen",
                     "description": "It is a long established fact that a reader will be distracted.",
-                    "amount": 72
+                    "amount": 89
                 },
                 {
+                    "productId": "p2882",
                     "image": "https://images.unsplash.com/photo-1579372786545-d24232daf58c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     "title": "Chicken Livers and Portuguese Roll",
                     "description": "It is a long established fact that a reader will be distracted.",
-                    "amount": 640
+                    "amount": 78
                 },
                 {
+                    "productId": "p2392",
                     "image": "https://images.unsplash.com/photo-1469533778471-92a68acc3633?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     "title": "Spicy Mixed Olives",
                     "description": "It is a long established fact that a reader will be distracted.",
-                    "amount": 99
+                    "amount": 22
                 }
             ]
         }

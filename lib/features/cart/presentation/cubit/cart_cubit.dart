@@ -1,38 +1,70 @@
+import 'package:built_collection/built_collection.dart';
 import 'package:e_commerce_app/features/cart/data/models/cart_item.dart';
-import 'package:equatable/equatable.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
+part 'cart_cubit.freezed.dart';
 part 'cart_state.dart';
 
 class CartCubit extends Cubit<CartState> {
-  CartCubit() : super(CartInfoState(cartItems: []));
+  CartCubit() : super(CartState.initial());
 
-  final List<CartItem> _itemList = [];
   void addToCart(CartItem item) {
     try {
-      _itemList.add(item);
-      _emitState();
+      final index =
+          state.items.indexWhere((i) => i.productId == item.productId);
+      final items = state.items.rebuild((builder) {
+        if (index != -1) {
+          builder[index] =
+              builder[index].copyWith(quantity: builder[index].quantity + 1);
+        } else {
+          builder.add(item.copyWith(quantity: 1));
+        }
+      });
+      _emitState(items);
     } on Exception catch (e) {
-      emit(CartErrorState(errorMessage: '$e'));
+      debugPrint("Error: $e");
     }
   }
 
-  void removeFromCart(CartItem item) {
+  Future<void> removeCartItem(CartItem item) async {
     try {
-      _itemList.remove(item);
-      _emitState();
+      final index =
+          state.items.indexWhere((i) => i.productId == item.productId);
+      final items = state.items.rebuild((builder) {
+        if (index != -1) {
+          if (builder[index].quantity > 1) {
+            builder[index] =
+                builder[index].copyWith(quantity: builder[index].quantity - 1);
+          } else {
+            builder.removeAt(index);
+          }
+        }
+      });
+      _emitState(items);
     } on Exception catch (e) {
-      emit(CartErrorState(errorMessage: '$e'));
+      debugPrint("Error: $e");
     }
   }
 
-  void _emitState() {
-    final _totalAmount = calculateTotalAmount();
-    emit(CartInfoState()
-        .copyWith(cartItems: _itemList, totalAmount: _totalAmount));
+  void _emitState(BuiltList<CartItem> items) {
+    emit(state.copyWith(
+      items: items,
+      totalAmount: calculateTotalAmount(items),
+      totalCartItem: _calculatetotalCartItem(items),
+    ));
   }
 
-  double calculateTotalAmount() {
-    return _itemList.fold(0, (sum, item) => sum + item.amount);
+  int _calculatetotalCartItem(BuiltList<CartItem> items) {
+    int totalQuantity = 0;
+    for (final item in items) {
+      totalQuantity += item.quantity;
+    }
+    return totalQuantity;
+  }
+
+  double calculateTotalAmount(BuiltList<CartItem> items) {
+    return items.fold(0, (sum, item) => sum + (item.amount * item.quantity));
   }
 }

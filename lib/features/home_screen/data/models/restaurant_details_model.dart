@@ -8,10 +8,8 @@ part 'restaurant_details_model.g.dart';
 class RestaurantDetailsModel with _$RestaurantDetailsModel {
   const factory RestaurantDetailsModel({
     required String name,
-    required String dscription,
-
-    //change to rating
-    required double review,
+    required String description,
+    required double ratings,
     required String totalReview,
     required int deliveryTime,
     required List<Category> category,

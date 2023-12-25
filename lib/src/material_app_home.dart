@@ -18,6 +18,7 @@ class MaterialAppHome extends StatelessWidget {
       providers: [
         BlocProvider<CartCubit>(
           create: (context) => CartCubit(),
+          lazy: false,
         ),
         BlocProvider<HomeScreenCubit>(
           create: (context) => HomeScreenCubit(

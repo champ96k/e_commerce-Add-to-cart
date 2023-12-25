@@ -22,9 +22,8 @@ RestaurantDetailsModel _$RestaurantDetailsModelFromJson(
 /// @nodoc
 mixin _$RestaurantDetailsModel {
   String get name => throw _privateConstructorUsedError;
-  String get dscription =>
-      throw _privateConstructorUsedError; //change to rating
-  double get review => throw _privateConstructorUsedError;
+  String get description => throw _privateConstructorUsedError;
+  double get ratings => throw _privateConstructorUsedError;
   String get totalReview => throw _privateConstructorUsedError;
   int get deliveryTime => throw _privateConstructorUsedError;
   List<Category> get category => throw _privateConstructorUsedError;
@@ -44,8 +43,8 @@ abstract class $RestaurantDetailsModelCopyWith<$Res> {
   @useResult
   $Res call(
       {String name,
-      String dscription,
-      double review,
+      String description,
+      double ratings,
       String totalReview,
       int deliveryTime,
       List<Category> category,
@@ -67,8 +66,8 @@ class _$RestaurantDetailsModelCopyWithImpl<$Res,
   @override
   $Res call({
     Object? name = null,
-    Object? dscription = null,
-    Object? review = null,
+    Object? description = null,
+    Object? ratings = null,
     Object? totalReview = null,
     Object? deliveryTime = null,
     Object? category = null,
@@ -79,13 +78,13 @@ class _$RestaurantDetailsModelCopyWithImpl<$Res,
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      dscription: null == dscription
-          ? _value.dscription
-          : dscription // ignore: cast_nullable_to_non_nullable
+      description: null == description
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
               as String,
-      review: null == review
-          ? _value.review
-          : review // ignore: cast_nullable_to_non_nullable
+      ratings: null == ratings
+          ? _value.ratings
+          : ratings // ignore: cast_nullable_to_non_nullable
               as double,
       totalReview: null == totalReview
           ? _value.totalReview
@@ -118,8 +117,8 @@ abstract class _$$RestaurantDetailsModelImplCopyWith<$Res>
   @useResult
   $Res call(
       {String name,
-      String dscription,
-      double review,
+      String description,
+      double ratings,
       String totalReview,
       int deliveryTime,
       List<Category> category,
@@ -140,8 +139,8 @@ class __$$RestaurantDetailsModelImplCopyWithImpl<$Res>
   @override
   $Res call({
     Object? name = null,
-    Object? dscription = null,
-    Object? review = null,
+    Object? description = null,
+    Object? ratings = null,
     Object? totalReview = null,
     Object? deliveryTime = null,
     Object? category = null,
@@ -152,13 +151,13 @@ class __$$RestaurantDetailsModelImplCopyWithImpl<$Res>
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      dscription: null == dscription
-          ? _value.dscription
-          : dscription // ignore: cast_nullable_to_non_nullable
+      description: null == description
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
               as String,
-      review: null == review
-          ? _value.review
-          : review // ignore: cast_nullable_to_non_nullable
+      ratings: null == ratings
+          ? _value.ratings
+          : ratings // ignore: cast_nullable_to_non_nullable
               as double,
       totalReview: null == totalReview
           ? _value.totalReview
@@ -185,8 +184,8 @@ class __$$RestaurantDetailsModelImplCopyWithImpl<$Res>
 class _$RestaurantDetailsModelImpl implements _RestaurantDetailsModel {
   const _$RestaurantDetailsModelImpl(
       {required this.name,
-      required this.dscription,
-      required this.review,
+      required this.description,
+      required this.ratings,
       required this.totalReview,
       required this.deliveryTime,
       required final List<Category> category,
@@ -199,10 +198,9 @@ class _$RestaurantDetailsModelImpl implements _RestaurantDetailsModel {
   @override
   final String name;
   @override
-  final String dscription;
-//change to rating
+  final String description;
   @override
-  final double review;
+  final double ratings;
   @override
   final String totalReview;
   @override
@@ -220,7 +218,7 @@ class _$RestaurantDetailsModelImpl implements _RestaurantDetailsModel {
 
   @override
   String toString() {
-    return 'RestaurantDetailsModel(name: $name, dscription: $dscription, review: $review, totalReview: $totalReview, deliveryTime: $deliveryTime, category: $category, shareLink: $shareLink)';
+    return 'RestaurantDetailsModel(name: $name, description: $description, ratings: $ratings, totalReview: $totalReview, deliveryTime: $deliveryTime, category: $category, shareLink: $shareLink)';
   }
 
   @override
@@ -229,9 +227,9 @@ class _$RestaurantDetailsModelImpl implements _RestaurantDetailsModel {
         (other.runtimeType == runtimeType &&
             other is _$RestaurantDetailsModelImpl &&
             (identical(other.name, name) || other.name == name) &&
-            (identical(other.dscription, dscription) ||
-                other.dscription == dscription) &&
-            (identical(other.review, review) || other.review == review) &&
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.ratings, ratings) || other.ratings == ratings) &&
             (identical(other.totalReview, totalReview) ||
                 other.totalReview == totalReview) &&
             (identical(other.deliveryTime, deliveryTime) ||
@@ -246,8 +244,8 @@ class _$RestaurantDetailsModelImpl implements _RestaurantDetailsModel {
   int get hashCode => Object.hash(
       runtimeType,
       name,
-      dscription,
-      review,
+      description,
+      ratings,
       totalReview,
       deliveryTime,
       const DeepCollectionEquality().hash(_category),
@@ -271,8 +269,8 @@ class _$RestaurantDetailsModelImpl implements _RestaurantDetailsModel {
 abstract class _RestaurantDetailsModel implements RestaurantDetailsModel {
   const factory _RestaurantDetailsModel(
       {required final String name,
-      required final String dscription,
-      required final double review,
+      required final String description,
+      required final double ratings,
       required final String totalReview,
       required final int deliveryTime,
       required final List<Category> category,
@@ -284,9 +282,9 @@ abstract class _RestaurantDetailsModel implements RestaurantDetailsModel {
   @override
   String get name;
   @override
-  String get dscription;
-  @override //change to rating
-  double get review;
+  String get description;
+  @override
+  double get ratings;
   @override
   String get totalReview;
   @override

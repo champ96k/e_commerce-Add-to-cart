@@ -12,7 +12,12 @@ class CartAddRemoveButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final _cubit = context.read<CartCubit>();
+    final _cubit = context.watch<CartCubit>();
+    final _quantity = _cubit.state.items
+        .firstWhere((i) => i.productId == item.productId,
+            orElse: () => item.copyWith(quantity: 0))
+        .quantity;
+
     final size = MediaQuery.of(context).size;
     return BlocProvider.value(
       value: _cubit,
@@ -20,12 +25,12 @@ class CartAddRemoveButton extends StatelessWidget {
         children: [
           PrimaryIconButton(
             icon: Icons.remove,
-            color: const Color(0xff11B546),
-            onTap: () => _cubit.removeFromCart(item),
+            color: _quantity > 0 ? const Color(0xff11B546) : Colors.grey,
+            onTap: () => _quantity > 0 ? _cubit.removeCartItem(item) : null,
           ),
           SizedBox(width: size.width * 0.03),
           Text(
-            "${item.quantity}",
+            "$_quantity",
             style: const TextStyle(
               color: Colors.black,
               fontSize: 14.0,

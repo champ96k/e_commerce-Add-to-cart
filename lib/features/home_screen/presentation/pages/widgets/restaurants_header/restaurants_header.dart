@@ -31,7 +31,7 @@ class RestaurantsHeader extends StatelessWidget {
                 ),
               ),
               Text(
-                model.dscription,
+                model.description,
                 style: const TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.w400,
@@ -44,7 +44,7 @@ class RestaurantsHeader extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   RestaurantsHeaderIconButton(
-                    text: '${model.review}',
+                    text: '${model.ratings}',
                     iconColor: Colors.orange,
                     icon: Icons.star,
                   ),

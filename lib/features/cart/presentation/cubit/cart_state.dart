@@ -1,29 +1,12 @@
 part of 'cart_cubit.dart';
 
-abstract class CartState extends Equatable {}
+@freezed
+abstract class CartState with _$CartState {
+  const factory CartState({
+    required BuiltList<CartItem> items,
+    @Default(0) double totalAmount,
+    @Default(0) int totalCartItem,
+  }) = _CartState;
 
-class CartInfoState extends CartState {
-  final List<CartItem>? cartItems;
-  final double? totalAmount;
-
-  CartInfoState({this.cartItems, this.totalAmount});
-
-  CartInfoState copyWith({List<CartItem>? cartItems, double? totalAmount}) {
-    return CartInfoState(
-      cartItems: cartItems ?? this.cartItems,
-      totalAmount: totalAmount ?? this.totalAmount,
-    );
-  }
-
-  @override
-  List<Object?> get props => [cartItems, totalAmount];
-}
-
-class CartErrorState extends CartState {
-  final String errorMessage;
-
-  CartErrorState({required this.errorMessage});
-
-  @override
-  List<Object?> get props => [errorMessage];
+  factory CartState.initial() => CartState(items: <CartItem>[].build());
 }

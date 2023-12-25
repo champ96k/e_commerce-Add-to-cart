@@ -13,7 +13,7 @@ class HomeTabBarBuilder extends StatelessWidget {
     return BlocBuilder<HomeScreenCubit, HomeScreenState>(
       builder: (context, state) {
         if (state is HomeScreenLoadingState) {
-          return const CircularProgressIndicator();
+          return const Center(child: CircularProgressIndicator());
         } else if (state is HomeScreenErrorState) {
           return Text("Error: ${state.errorMessage}");
         } else if (state is HomeScreenLoadedState) {
