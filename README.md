@@ -62,5 +62,3 @@ Feel free to contribute to the project by opening issues or submitting pull requ
 
 This project is licensed under the [MIT License](LICENSE).
 
-
-![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=jwenjian.visitor-badge)
